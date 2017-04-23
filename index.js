@@ -32,7 +32,6 @@ var j = schedule.scheduleJob(rule, function(){
         console.log(message.sid);
       }
   });
-
   
 });
 
