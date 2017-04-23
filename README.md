@@ -14,12 +14,15 @@ This app needs a Twilio account and phone number tied to said account. Below is 
 
 
 ## Environmental Variables
-For security, you should never push your API keys to github. This is how to set your environmental variables in Heroku. NOte this assuming that you already have the Heroku CLI.
+For security, you should never push your API keys to github. This is how to set your environmental variables in Heroku. NOte this assuming that you already have the Heroku CLI and have already added a heroku remote.
 
-Set up the TWILLIO_SID: `$ heroku config:set TWILLIO_SID={your sid here}` 
+Set up the TWILLIO_SID: `$ heroku config:set TWILLIO_SID="{your sid here}"` 
 
-Set up the TWILLIO_TOKEN: `$ heroku config:set TWILLIO_TOKEN={your token here}` 
+Set up the TWILLIO_TOKEN: `$ heroku config:set TWILLIO_TOKEN="{your token here}"` 
 
-Set up the TWILIO_NUMBER: `$ heroku config:set TWILLIO_NUMBER={your twilio phone number here}` 
+Set up the TWILIO_NUMBER: `$ heroku config:set TWILLIO_NUMBER="{your twilio phone number here}"` 
 
-Set up the number to text: `$ heroku config:set TEXT_THIS_NUMBER={your real phone number here}`
+Set up the number to text: `$ heroku config:set TEXT_THIS_NUMBER="{your real phone number here}"`
+
+Note that the cruly brackets are not to be copied, they are there as a visual cue to paste your info there.
+The twilio phone number and your phone number should be in the `+18001231234` format.
