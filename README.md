@@ -1,6 +1,8 @@
 # HackRUSpring2017
 Creating a Simple Twilio NodeJS Cron Job. This can serve as a cool biolerplate.
 
+A Twilio app to text a number every minute for no real reason.
+
 
 ## Twilio Account
 This app needs a Twilio account and phone number tied to said account. Below is how to set that up:
