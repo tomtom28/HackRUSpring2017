@@ -2,7 +2,7 @@
   "name": "hackru2017spring",
   "version": "1.0.0",
   "description": "twilio thing",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node worker.js"
