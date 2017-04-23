@@ -28,5 +28,3 @@ Note that the cruly brackets are not to be copied, they are there as a visual cu
 The twilio phone number and your phone number should be in the `+18001231234` format.
 
 You can run `heroku config` to check if all your enivornmental variables are set.
-
-Note that the `Procfile` is there just to make a Heroku worker (non-website app).
