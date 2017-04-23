@@ -1,5 +1,5 @@
 # HackRUSpring2017
-Creating a Simple Twilio NodeJS Cron Job. This can serve as a cool biolerplate.
+Creating a Simple Twilio NodeJS Cron Job. This can serve as a cool boilerplate.
 
 A Twilio app to text a number every minute for no real reason.
 
@@ -14,7 +14,7 @@ This app needs a Twilio account and phone number tied to said account. Below is 
 
 
 ## Environmental Variables
-For security, you should never push your API keys to github. This is how to set your environmental variables in Heroku. NOte this assuming that you already have the Heroku CLI and have already added a heroku remote.
+For security, you should never push your API keys to github. This is how to set your environmental variables in Heroku. Note this assumes that you already have the Heroku CLI and have already added a heroku remote.
 
 Set up the TWILLIO_SID: `$ heroku config:set TWILLIO_SID="{your sid here}"` 
 
