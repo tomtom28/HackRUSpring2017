@@ -29,4 +29,4 @@ The twilio phone number and your phone number should be in the `+18001231234` fo
 
 You can run `heroku config` to check if all your enivornmental variables are set.
 
-Note that the `Procfile` is there just to make a Heorku worker (non-website app).
+Note that the `Procfile` is there just to make a Heroku worker (non-website app).
