@@ -26,3 +26,5 @@ Set up the number to text: `$ heroku config:set TEXT_THIS_NUMBER="{your real pho
 
 Note that the cruly brackets are not to be copied, they are there as a visual cue to paste your info there.
 The twilio phone number and your phone number should be in the `+18001231234` format.
+
+You can run `heroku config` to check if all your enivornmental variables are set.
