@@ -15,7 +15,7 @@ var textThisNumber = process.env.TEXT_THIS_NUMBER;; // Environmental Variable of
 var rule = new schedule.RecurrenceRule();
 rule.dayOfWeek = 7; // Monday
 rule.hour = 10;
-rule.minute = 22;
+rule.minute = 23;
 var j = schedule.scheduleJob(rule, function(){
 
   // Send Text Message To a (verified) Number
