@@ -11,11 +11,11 @@ var twilioNumber = process.env.TWILLIO_NUMBER; // Environmental Variable of your
 var textThisNumber = process.env.TEXT_THIS_NUMBER;; // Environmental Variable of the number you want to text here. Note it must be verified in https://www.twilio.com/console/phone-numbers/verified
 
 
-// Run Code Every Monday at 8:30am
+// Run Code Every Monday at 7:55am
 var rule = new schedule.RecurrenceRule();
 rule.dayOfWeek = 1; // Monday
-rule.hour = (10 + 4) - 12;
-rule.minute = 27;
+rule.hour = 7 + 4; // Heorku server is 4 hours ahead of me (EDT)
+rule.minute = 55;
 var j = schedule.scheduleJob(rule, function(){
 
   // Send Text Message To a (verified) Number
