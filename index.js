@@ -13,9 +13,9 @@ var textThisNumber = process.env.TEXT_THIS_NUMBER;; // Environmental Variable of
 
 // Run Code Every Monday at 8:30am
 var rule = new schedule.RecurrenceRule();
-rule.dayOfWeek = 7; // Monday
-rule.hour = 10;
-rule.minute = 23;
+rule.dayOfWeek = 1; // Monday
+rule.hour = (10 + 4) - 12;
+rule.minute = 27;
 var j = schedule.scheduleJob(rule, function(){
 
   // Send Text Message To a (verified) Number
