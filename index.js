@@ -11,15 +11,17 @@ var twilioNumber = process.env.TWILLIO_NUMBER; // Environmental Variable of your
 var textThisNumber = process.env.TEXT_THIS_NUMBER;; // Environmental Variable of the number you want to text here. Note it must be verified in https://www.twilio.com/console/phone-numbers/verified
 
 
-// Run Code Every Minute on the Minute
+// Run Code Every Monday at 8:30am
 var rule = new schedule.RecurrenceRule();
-rule.second = 0; // refer to https://github.com/node-schedule/node-schedule for more info
+rule.dayOfWeek = 7; // Monday
+rule.hour = 10;
+rule.minute = 22;
 var j = schedule.scheduleJob(rule, function(){
 
   // Send Text Message To a (verified) Number
   var client = new twilio.RestClient(accountSid, authToken);
   client.messages.create({
-      body: 'Hey there! Another minute has gone by!',
+      body: 'Hey, it\'s Monday! Get ready for work!',
       to: textThisNumber,  // Text this number
       from: twilioNumber // From this valid Twilio number
   }, function(err, message) {
